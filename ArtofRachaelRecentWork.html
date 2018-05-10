@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Art of Rachael Britton</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/ArtofRachaeRecentwork.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+
+  </head>
+
+<body>
+   <header>
+
+        <h1>The Art of Rachael Britton</h1>
+<nav>
+      <ul>
+        <li><a href="ArtofRachaelFinal.html">Home</a></li>
+        <li><a href="ArtofRachaelAbout.html">About</a></li>
+        <li><a href="ArtofRachaelGallery.html">Character Designs</a></li>
+        <li><a class="active" href="ArtofRachaelRecentWork.html">Recent Work</a></li>
+        <li><a href="TheArtofRachaelBrittonBlog.html">Inspirations</a></li>
+    </ul>
+</nav>
+
+</header>
+
+<main>
+  <div id="maintext"><p> Below you will see a slideshow of a few of my most recent works.
+    Recently I have been working on pen and ink drawings and working on illustrating light and shadfow using simple black and whites. To learn more about what I am currently working on, head over to my blog page!</p></div>
+  <br>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="Images/GregortheOverlanderCovercopy.jpeg" alt="Ink Drawing of Gregor the Overlander" style="width:100%">
+      <div class="overlay"><div class="text">A book cover for "Gregor the Overlander" by Suzanne Collins</div></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="Images/TheChroniclesofNarniaBookCovercopy.jpeg" alt="Ink Drawing of The Chronicles of Narnia" style="width:100%">
+      <div class="overlay"><div class="text">A book cover for "The Chronicles of Narnia" by C.S. Lewis</div></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="Images/LegionBookCovercopy.jpeg" alt="Ink cover of Legion" style="width:100%">
+      <div class="overlay"><div class="text">A book cover for "Legion" by Brandon Sanderson</div></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="Images/TheBookThiefBookCovercopy.jpeg" alt="Ink cover of " style="width:100%">
+      <div class="overlay"><div class="text">A book cover for "The Book Thief" by Marcus Zusak</div></div>
+    </div>
+
+    </div>
+    <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+<br>
+
+<br>
+<footer>Copyright &copy; Rachael Britton</footer>
+</main>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+   slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
